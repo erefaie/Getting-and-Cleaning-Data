@@ -2,9 +2,6 @@
 title: "Gathering and Cleaning Data - Codebook"
 author: "Eman AlRefaie"
 date: "19-Sep-16"
-output:
-  html_document:
-    keep_md: yes
 ---
 
 ## Project Description

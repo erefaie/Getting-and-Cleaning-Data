@@ -1,0 +1,21 @@
+Gathering and Cleaning Data
+
+This assignment project is for collecting, working with and cleaning data
+
+The run_analysis.R file do the following:
+- Download the assignment file
+- unzip the file and set the working directory
+- Read both X and Y tables for test and training datasets
+- Read the features file to use them as variables names
+- Read the activities labels
+- Get list of variables names from features.txt file
+- Rename test data set variables of test and train datasets
+- Rename activity column of test and train datasets
+- Addthe activity column to both datasets, test and train
+- Bind the 2 data sets (test and train)
+- Extract only the variables of mean and std and store the result in new dataset called tidy_ds
+- update the column of activity descriotion 
+- Create the second dataset for average
+- Write data to txt file
+
+

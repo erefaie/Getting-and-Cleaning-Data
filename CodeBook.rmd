@@ -1,0 +1,150 @@
+---
+title: Gathering and Cleaning Data - Codebook
+author: Eman AlRefaie
+date: 19-Sep-16
+---
+
+## Project Description
+This Codebook file shows how to collect, work with and clean dataset
+
+
+###Collection of the raw data
+The R script will download the zip file containing the files
+
+
+###Notes on the original (raw) data 
+Some additional notes (if avaialble, otherwise you can leave this section out).
+
+
+###Guide to create the tidy data file
+Data collected and arrange as follows:
+* create folder for the assignment files
+* download files
+* Read X and Y tables
+* Read the features file to use them as variables names
+* read the activities labels
+* get list of variables names from features.txt file
+* rename test data set variables
+* rename train data set variables
+* rename activity column to activity id
+* add new column for activity label
+* Bind the two data sets
+
+
+###Cleaning of the data
+- extract only the variables of mean and std and store the result in new dataset called tidy_ds
+- update the activity description value
+- create dataset for average
+- write data to file
+- 
+
+##Description of the variables in the tidy_ds.txt file
+General description of the file including:
+- Activity_ID: Numeric variable – activity number
+- Activity_Label: String variable – activity label read from 
+- 
+
+tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z : 
+	The Mean of body acceleration signals (by time)
+tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z :
+	The standard deviation of body acceleration signals (by time)
+tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z :
+	The Mean of gravity acceleration signals (by time)
+tGravityAcc-std()-X, tGravityAcc-std()-Y, tGravityAcc-std()-Z:
+       The standard deviation of gravity acceleration signals (by time)
+       
+tBodyAccJerk-mean()-X, tBodyAccJerk-mean()-Y, tBodyAccJerk-mean()-Z:
+       The mean of body acceleration jerk signals (by time)
+
+tBodyAccJerk-std()-X, tBodyAccJerk-std()-Y, tBodyAccJerk-std()-Z:
+       The standard deviation of body acceleration jerk signals (by time)
+
+tBodyGyro-mean()-X, tBodyGyro-mean()-Y, tBodyGyro-mean()-Z:
+       The mean of body gyroscope signals (by time)
+
+tBodyGyro-std()-X, tBodyGyro-std()-Y, tBodyGyro-std()-Z:
+       The standard deviation of body gyroscope signals (by time)
+
+tBodyGyroJerk-mean()-X, tBodyGyroJerk-mean()-Y, tBodyGyroJerk-mean()-Z:
+       The mean of body gyroscope jerk signals (by time)
+
+tBodyGyroJerk-std()-X, tBodyGyroJerk-std()-Y, tBodyGyroJerk-std()-Z:
+       The standard deviation of body gyroscope jerk signals (by time)
+
+tBodyAccMag-mean():
+       The mean of body acceleration signals magnitude (by time)
+
+tBodyAccMag-std():
+       The standard deviation of body acceleration signals magnitude (by time)
+
+tGravityAccMag-mean():
+       The mean of gravity acceleration signals magnitude (by time)
+
+tGravityAccMag-std():
+       The standard deviation of gravity acceleration signals magnitude (by time)
+
+tBodyAccJerkMag-mean():
+       The mean of body acceleration jerk signals magnitude signals (by time)
+
+tBodyAccJerkMag-std():
+       The standard deviation of body acceleration jerk signals magnitude signals (by time)
+
+tBodyGyroMag-mean():
+	The mean of body gyroscope signals magnitude (by time)
+
+tBodyGyroMag-std():
+	The standard deviation of body gyroscope signals magnitude (by time)
+
+tBodyGyroJerkMag-mean():
+	The mean of body gyroscope jerk signals magnitude (by time)
+
+tBodyGyroJerkMag-std() 
+	The standard deviation of body gyroscope jerk signals magnitude (by time)
+
+fBodyAcc-mean()-X, fBodyAcc-mean()-Y, fBodyAcc-mean()-Z :
+	The mean of body acceleration signals (by applying Fast Fourier Transform)
+
+fBodyAcc-std()-X, fBodyAcc-std()-Y, fBodyAcc-std()-Z:
+	The standard deviation of body acceleration signals (by applying Fast Fourier Transform applied)
+
+fBodyAccJerk-mean()-X, fBodyAccJerk-mean()-Y, fBodyAccJerk-mean()-Z:
+	The mean of body acceleration with jerk signals (by applying Fast Fourier Transform)
+
+fBodyAccJerk-std()-X, fBodyAccJerk-std()-Y, fBodyAccJerk-std()-Z :
+	The standard deviation of body acceleration with jerk signals (by applying Fast Fourier Transform applied)
+
+fBodyGyro-mean()-X, fBodyGyro-mean()-Y, fBodyGyro-mean()-Z:
+	The mean of body gyroscope signals (by applying Fast Fourier Transform)
+
+fBodyGyro-std()-X, fBodyGyro-std()-Y, fBodyGyro-std()-Z:
+	The standard deviation of body gyroscope signals (by applying Fast Fourier Transform)
+
+fBodyAccMag-mean():
+	The mean of body acceleration signals magnitude (by applying Fast Fourier Transform)
+
+fBodyAccMag-std():
+	The standard deviation of body acceleration signals magnitude (by applying Fast Fourier Transform)
+
+fBodyBodyAccJerkMag-mean():
+	The mean of body acceleration with jerk signals magnitude (by applying Fast Fourier Transform)
+
+fBodyBodyAccJerkMag-std():
+	The standard deviation of body acceleration with jerk signals magnitude (by applying Fast Fourier Transform)
+
+fBodyBodyGyroMag-mean():
+	The mean of body gyroscope signals magnitude (by applying Fast Fourier Transform)
+
+fBodyBodyGyroMag-std():
+	The standard deviation of body gyroscope signals magnitude (by applying Fast Fourier Transform)
+
+fBodyBodyGyroJerkMag-mean():
+	The mean of body gyroscope signals with jerk magnitude (by applying Fast Fourier Transform)
+
+fBodyBodyGyroJerkMag-std():
+	The standard deviation of body gyroscope with jerk signals magnitude (by applying Fast Fourier Transform)
+
+
+
+##Library used
+Dplyr
+
